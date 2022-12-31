@@ -1,18 +1,3 @@
-
-/*
-
-  Shape Shifter
-  =============
-  A canvas experiment by Kenneth Cachia
-  http://www.kennethcachia.com
-
-  Updated code
-  ------------
-  https://github.com/kennethcachia/Shape-Shifter
-
-*/
-
-
 var S = {
   init: function () {
     var action = window.location.href,
@@ -24,7 +9,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3||2|0|2|3|新|年|快|乐|#rectangle|');
+      S.UI.simulate('|#countdown 3||'2'|'0'|'2'|'3'|'新'|'年'|'快'|'乐'|#rectangle|');
     }
 
     S.Drawing.loop(function () {
